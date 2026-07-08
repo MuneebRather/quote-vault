@@ -110,6 +110,19 @@ http://localhost:5000
 
 ---
 
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Upvoting a Quote
+![Upvoted](screenshots/upvoted.png)
+
+### Running Containers
+![Containers](screenshots/containers.png)
+
+---
+
 ## Skills Demonstrated
 
 - Docker
@@ -122,17 +135,6 @@ http://localhost:5000
 - PostgreSQL
 - Gunicorn
 - Linux
-
----
-
-## Future Improvements
-
-- Docker Compose support
-- Health checks
-- Multi-stage Docker builds
-- Nginx reverse proxy
-- CI/CD with GitHub Actions
-- Kubernetes deployment
 
 ---
 
