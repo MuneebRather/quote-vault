@@ -121,6 +121,9 @@ http://localhost:5000
 ### Running Containers
 ![Containers](screenshots/containers.png)
 
+### Network Verification
+![Network](screenshots/network-inspect.png)
+
 ---
 
 ## Skills Demonstrated
