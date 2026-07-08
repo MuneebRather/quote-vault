@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Vault</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .vault {
+            background: #16213e;
+            padding: 3rem;
+            border-radius: 16px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .quote-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .quote-author {
+            color: #e94560;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .votes {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+        .up { background: #0f3460; }
+        .up:hover { background: #16c79a; }
+        .down { background: #0f3460; }
+        .down:hover { background: #e94560; }
+        .next { background: #533483; margin-top: 1rem; }
+        .next:hover { background: #7b2cbf; }
+        .score {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="vault">
+        <div class="quote-text">"{{ quote.text }}"</div>
+        <div class="quote-author">— {{ quote.author }}</div>
+        <div class="votes">
+            <a href="/upvote/{{ quote.id }}" class="btn up">👍 Upvote ({{ quote.upvotes }})</a>
+            <a href="/downvote/{{ quote.id }}" class="btn down">👎 Downvote ({{ quote.downvotes }})</a>
+        </div>
+        <a href="/" class="btn next">🎲 Next Quote</a>
+        <div class="score" style="margin-top:1rem;">Quote #{{ quote.id }}</div>
+    </div>
+</body>
+</html>
